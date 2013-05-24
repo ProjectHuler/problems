@@ -25,8 +25,8 @@ int solve001( int a, int b, int limit )
 	(3+6+9+...+999) = 3(1+2+3...333) = 3(1+333)(333/2)
 	**********/
 	int solve001=0;
-	solve001 += a*(1+floor(((float)limit)/a))*floor(((float)limit)/a)/2;
-	solve001 += b*(1+floor(((float)limit)/b))*floor(((float)limit)/b)/2;
-	solve001 -= (a*b)*(1+floor(((float)limit)/(a*b)))*floor(((float)limit)/(a*b))/2;
+	solve001 +=    a *(1+floor(((float)limit)/ a    ))*floor(((float)limit)/ a    )/2;
+	solve001 +=    b *(1+floor(((float)limit)/ b    ))*floor(((float)limit)/ b    )/2;
+	solve001 -= (a*b)*(1+floor(((float)limit)/(a*b) ))*floor(((float)limit)/(a*b) )/2;
 	return solve001;
 }
