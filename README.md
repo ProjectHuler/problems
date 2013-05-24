@@ -25,3 +25,10 @@ C code will need to be compiled before it can be run. Try
    ```
 
 ### R
+To run R code:
+
+1.  Install and launch R at [http://cran.r-project.org/](http://cran.r-project.org/)
+2.  Open *.R file with console
+3.  Place cursor in the editing window (not R Console)
+4.  From top menu:  Edit -> Run All 
+5.  Outputs should now be printed inside the R Console window
