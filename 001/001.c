@@ -8,7 +8,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 int solve001( int a, int b, int limit );
 
-void main()
+int main(void)
 {
     int p1 = 3;
 	int p2 = 5;
