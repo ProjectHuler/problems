@@ -1,5 +1,7 @@
 *.py[cod]
 
+# R data
+.Rhistory
 # C extensions
 *.so
 *.out
