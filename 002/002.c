@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 int solve002( int a, int b, int limit, int answer);
 
 int main(void)
