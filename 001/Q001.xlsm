@@ -1,0 +1,28 @@
+' Problem statement:
+' Find the sum of all the multiples of 3 or 5 below 1000
+' Approach:
+' Check each integer 1 thru 999 with modulus function.
+
+' Comments below with Range("XX") were pulling variables from worksheet.
+
+Option Explicit
+
+Sub Q001()
+    Dim ANS As Double
+    Dim i, Mul1, Mul2 As Integer
+        
+    Mul1 = 3    'Mul1 = Range("F3")
+    Mul2 = 5    'Mul2 = Range("F4")
+    
+    For i = 1 To 999 'To Range("F2")
+        If (i Mod Mul1 = 0) Or (i Mod Mul2 = 0) Then
+            ANS = ANS + i
+        End If
+    Next i
+       
+    Range("B4") = ANS
+    MsgBox ("Answer = " & ANS)
+    
+    ' ANS = 233168
+    
+End Sub
